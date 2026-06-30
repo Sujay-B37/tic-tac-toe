@@ -1,0 +1,86 @@
+﻿@import url(template.css);
+
+/*Don't forget to have the template.css file in the Source folder.*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body,html{
+    height: 100vh;  
+    width:100vw;
+}
+
+body,form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.container{
+    box-sizing: border-box;
+    height:40vh;
+    width: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 2.5vh;
+}   
+
+.card{
+    margin:0.5vh;
+    box-sizing: border-box;
+    padding:2vh;
+    background-color:red;
+    color: white;
+    font-size: 5.5vh;
+    text-align: center;
+    font-weight: 900;
+}
+
+.msg{
+    font-size: 4vh;
+}
+
+label{
+    border:none;
+    outline: none;
+    border-radius: 4vh;
+    font-size: 2.5vh;
+}
+
+input{
+    padding:0.5vh;
+    border:0.2vh solid black;
+    outline: none;
+    border-radius: 2vh;
+    font-size: 2.5vh;
+}
+
+.st,.again{
+    cursor: pointer;
+    margin:2vh;
+    padding:1vh;
+    color:white;
+    background-color: blue;
+    border:none;
+    outline: none;
+    border-radius: 2vh;
+    font-size: 2.5vh;
+}
+
+.st:hover{
+    box-shadow: 0 0 1vh gray;
+}
+.st:active{
+    box-shadow: none;
+}
+
+.btn-div{
+    margin: 4vh;
+    padding: 0;
+}
